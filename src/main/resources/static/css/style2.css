@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: #ffffff;
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading Styling */
+.dashboard-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2a3f54;
+    font-weight: 600;
+}
+
+/* Button Styling */
+.dashboard-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.dashboard-container button {
+	border: 1px solid balck;
+    padding: 12px 20px;
+    margin: 0.3rem 0;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-container button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
